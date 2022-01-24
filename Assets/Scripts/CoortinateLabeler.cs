@@ -5,12 +5,18 @@ using TMPro;
 [ExecuteAlways]
 public class CoortinateLabeler : MonoBehaviour
 {
+    [SerializeField] Color defaultColor = Color.white;
+    [SerializeField] Color blockedColor = Color.gray;
+
     TextMeshPro label;
-    Vector2Int coordinates = new Vector2Int(); 
+    Vector2Int coordinates = new Vector2Int();
+    WayPoint waypoint;
     void Awake()
     {
         label = GetComponent<TextMeshPro>();
+        waypoint = GetComponentInParent<WayPoint>();
         DisplayCoordinates();   
+        label.enabled = false;
 
     }
 
@@ -21,10 +27,35 @@ public class CoortinateLabeler : MonoBehaviour
             DisplayCoordinates();
             UpdateObjectName(); 
         }
+
+        Colorcoordinates();
+        toggleLabels();
+    }
+
+    void Colorcoordinates() 
+    {
+        if (waypoint.IsPlaceable) 
+        {
+            label.color = defaultColor;
+        }
+        else 
+        {
+            label.color = blockedColor;
+        }
+    }
+
+    void toggleLabels() 
+    {
+        if (Input.GetKeyDown(KeyCode.X)) 
+        {
+            label.enabled = !label.IsActive();
+        }
+    
+    
     }
 
     void DisplayCoordinates() //Showing the objects coordinates
-    {
+    { 
         coordinates.x =Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
         coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);
         label.text = coordinates.x + "," + coordinates.y;

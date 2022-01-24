@@ -7,6 +7,8 @@ public class WayPoint : MonoBehaviour
 {
     [SerializeField] bool isPlaceable;
     [SerializeField] GameObject Tower;
+
+    public bool IsPlaceable { get  { return isPlaceable; } }
      void OnMouseDown()
     {
 
