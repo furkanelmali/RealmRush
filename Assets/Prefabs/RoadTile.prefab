@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RoadTile
       objectReference: {fileID: 0}
+    - target: {fileID: 445163916838140098, guid: 1346252a1e8ae914f97f719f9d385aef, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2292055157166562374, guid: 1346252a1e8ae914f97f719f9d385aef, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
