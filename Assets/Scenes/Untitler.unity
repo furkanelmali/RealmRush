@@ -789,6 +789,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3341554883560030748, guid: 1346252a1e8ae914f97f719f9d385aef, type: 3}
   m_PrefabInstance: {fileID: 734545786}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &814547648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 814547650}
+  - component: {fileID: 814547649}
+  m_Layer: 0
+  m_Name: GoldPack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &814547649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814547648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 496417487b867754b8aeb37b9c786d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingGold: 150
+  currentGold: 0
+--- !u!4 &814547650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814547648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12.67985, y: -9.953945, z: 9.355112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &875194524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1460,6 +1505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 5040643765344069697, guid: b940df629b09f434dbb9fd487257db6c, type: 3}
+  poolSize: 5
   timer: 1
 --- !u!4 &1592888621
 Transform:

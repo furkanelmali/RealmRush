@@ -54,11 +54,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CoortinateLabeler.cs" />
+    <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\TargetLocator.cs" />
     <Compile Include="Assets\Scripts\WayPoint.cs" />
     <Compile Include="Assets\Scripts\EnemyMover.cs" />
-    <Compile Include="Assets\Scripts\ObjectPool.cs" />
+    <Compile Include="Assets\Scripts\MoneySystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetPacks\TextMesh Pro\Shaders\TMPro.cginc" />
