@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176449378929333872}
   m_LocalRotation: {x: -0, y: -0.0015167305, z: -0, w: 0.99999887}
-  m_LocalPosition: {x: 0, y: 0.212, z: 0}
+  m_LocalPosition: {x: 0, y: 0.21199997, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3144582324300694500}
@@ -41,7 +41,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1176449378929333872}
   serializedVersion: 7
   lengthInSec: 5
-  simulationSpeed: 1
+  simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -105,7 +105,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4813,7 +4813,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3049131714819384361}
-  - component: {fileID: -7691962785888918463}
+  - component: {fileID: 4798601398617022091}
+  - component: {fileID: 6576626729922472620}
   m_Layer: 0
   m_Name: Ballista
   m_TagString: Untagged
@@ -4837,7 +4838,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-7691962785888918463
+--- !u!114 &4798601398617022091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3219458064393657486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1948e3bed842fb4cae77112a4be9f51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerprize: 50
+--- !u!114 &6576626729922472620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4850,7 +4864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 3144582324300694500}
-  range: 15
+  range: 30
   projectTileSystem: {fileID: 576381460334910779}
 --- !u!1 &6131056645070147807
 GameObject:

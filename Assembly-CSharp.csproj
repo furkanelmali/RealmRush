@@ -53,6 +53,7 @@
     <UnityVersion>2020.3.26f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MoneySystem.cs" />
     <Compile Include="Assets\Scripts\CoortinateLabeler.cs" />
     <Compile Include="Assets\Scripts\ObjectPool.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
@@ -60,7 +61,7 @@
     <Compile Include="Assets\Scripts\TargetLocator.cs" />
     <Compile Include="Assets\Scripts\WayPoint.cs" />
     <Compile Include="Assets\Scripts\EnemyMover.cs" />
-    <Compile Include="Assets\Scripts\MoneySystem.cs" />
+    <Compile Include="Assets\Scripts\Tower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AssetPacks\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -5,7 +5,7 @@ using UnityEngine;
 public class TargetLocator : MonoBehaviour
 {
     [SerializeField] Transform weapon;
-    [SerializeField] float range = 120f;
+    [SerializeField] float range = 30f;
     [SerializeField] ParticleSystem projectTileSystem; 
     Transform target;
     // Start is called before the first frame update
@@ -29,15 +29,17 @@ public class TargetLocator : MonoBehaviour
         {
             float targetDist = Vector3.Distance(transform.position, enemy.transform.position);
 
-            if (targetDist < range)
+            if (targetDist <= range)
             { attack(true); }
-            else
+            else if ( targetDist > range)
             { attack(false); }
 
             if (targetDist < maxDistance)
             {
                 closestarget = enemy.transform;
                 maxDistance = targetDist;
+                
+              
             }
 
         }

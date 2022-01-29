@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 [ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class CoortinateLabeler : MonoBehaviour
 {
     [SerializeField] Color defaultColor = Color.white;
     [SerializeField] Color blockedColor = Color.gray;
+
+    
 
     TextMeshPro label;
     Vector2Int coordinates = new Vector2Int();
@@ -20,6 +23,7 @@ public class CoortinateLabeler : MonoBehaviour
 
     }
 
+   
     void Update()
     {
         if (!Application.isPlaying) 
@@ -28,11 +32,11 @@ public class CoortinateLabeler : MonoBehaviour
             UpdateObjectName(); 
         }
 
-        Colorcoordinates();
+        SetColorcoordinates();
         toggleLabels();
     }
 
-    void Colorcoordinates() 
+    void SetColorcoordinates() 
     {
         if (waypoint.IsPlaceable) 
         {
